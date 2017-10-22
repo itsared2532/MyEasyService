@@ -1,20 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="app.tsc.itsared.myeasyservice.MainActivity">
 
-    <!--Toolbar-->
 
-
-    <!--Content Fragment-->
-    <FrameLayout
-        android:id="@+id/contentFragmentMain"
+    <!--Content-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
 
 
-</LinearLayout>
+        <!--Content Fragment-->
+        <FrameLayout
+            android:id="@+id/contentFragmentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!--Drawer Menu-->
+    <LinearLayout
+        android:padding="@dimen/margin"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        
+        <!--Title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drawer Menu"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold" />
+
+        <!--MainFragment-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--icon-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_main" />
+            <!--text-->
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Fragment"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/h2" />
+
+
+        </LinearLayout>
+        <!--SecondFragment-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--icon-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_second" />
+            <!--text-->
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Fragment"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/h2" />
+
+
+        </LinearLayout>
+        <!--ExitFragment-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--icon-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_exe" />
+            <!--text-->
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/h2" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
