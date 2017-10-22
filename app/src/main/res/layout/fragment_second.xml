@@ -17,18 +17,18 @@
 
     <!--Image-->
     <ImageView
-        android:src="@drawable/humen"
         android:layout_width="@dimen/icon2"
-        android:layout_height="@dimen/icon2" />
+        android:layout_height="@dimen/icon2"
+        android:src="@drawable/humen" />
 
     <!--Back Button-->
     <Button
-
-        android:textColor="#FFFFFF"
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/icon2"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:text="Back"
-        android:layout_width="@dimen/icon2"
-        android:layout_height="wrap_content" />
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>
